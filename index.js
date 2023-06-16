@@ -2,6 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const cors = require("cors");
 dotenv.config();
 
 // Create an instance of Express.js
@@ -9,6 +10,8 @@ const app = express();
 
 // Set up middleware for parsing JSON data
 app.use(express.json());
+app.use(cors());
+
 
 // Define a mongoose schema for the message collection
 const messageSchema = new mongoose.Schema({
