@@ -1,7 +1,8 @@
 // Import required modules
 const express = require("express");
 const mongoose = require("mongoose");
-require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config();
 
 // Create an instance of Express.js
 const app = express();
